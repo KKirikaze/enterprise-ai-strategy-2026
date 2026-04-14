@@ -1,0 +1,22 @@
+{
+  "name": "ai-strategy-2026-website",
+  "version": "1.0.0",
+  "description": "2026 AI全员落地战略展示网站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "AI",
+    "Strategy",
+    "Enterprise"
+  ],
+  "author": "AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.32"
+  }
+}
