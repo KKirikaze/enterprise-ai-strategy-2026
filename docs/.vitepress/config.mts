@@ -3,7 +3,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "AI 全员落地 2026",
   description: "企业 AI 战略规划与运营方案",
-  base: '/ai-strategy-2026/',
+  base: '/enterprise-ai-strategy-2026/',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'theme-color', content: '#6366f1' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'AI 全员落地 2026' }],
+    ['meta', { property: 'og:description', content: '企业智能化转型战略规划与运营方案' }],
+  ],
   
   themeConfig: {
     logo: '/logo.svg',
@@ -72,5 +79,15 @@ export default defineConfig({
       dark: 'github-dark'
     },
     lineNumbers: true
+  },
+
+  // 启用 SPA 模式以实现页面切换动画
+  appearance: 'dark',
+  
+  // 优化构建
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1600
+    }
   }
 })
